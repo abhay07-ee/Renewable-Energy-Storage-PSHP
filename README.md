@@ -1,81 +1,67 @@
-# 💧 Micro-Hydro Pumped Storage Plant Design & Estimation ⚡
+# 🌊 Micro-Hydro Power Systems: Design & Project Estimation 🏗️
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Domain-Renewable%20Energy-blue?style=for-the-badge&logo=eco" />
-  <img src="https://img.shields.io/badge/Focus-Grid%20Stability-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Location-Himachal%20Pradesh-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Main--Domain-Power%20Systems-yellow?style=for-the-badge&logo=electrical-safety" />
+  <img src="https://img.shields.io/badge/Specialization-Renewable%20Energy-green?style=for-the-badge&logo=eco" />
+  <img src="https://img.shields.io/badge/Tool-Python%20%2F%20AutoCAD-blue?style=for-the-badge" />
 </div>
 
-## 📌 Project Overview
-This project presents a comprehensive design and mathematical model for a **Micro-Hydro Pumped Storage Plant (PSHP)**. Designed specifically for the hilly terrain of **Himachal Pradesh**, this system acts as a "Water Battery," storing excess energy during low demand and generating power during peak hours.
-
-### 🌟 Key Innovations
-- **Energy Arbitrage:** Pumping water to an upper reservoir when solar/wind energy is surplus.
-- **Micro-Grid Stability:** Providing instant power to remote areas where the main grid is unstable.
-- **Cost-Effective Estimation:** Full Bill of Quantities (BOQ) for small-scale implementation (10kW - 50kW).
-- **Eco-Friendly:** Zero-carbon emission solution using natural geography.
+## 📌 Project Integration Details
+This repository represents an integrated engineering approach to **Small-Scale Hydropower Generation** and **Electrical Project Costing**. It combines hydraulic simulation with industrial-grade estimation to provide a complete "Concept-to-Cost" solution for mountainous regions like **Himachal Pradesh**.
 
 ---
 
-## 📐 System Architecture & Design
+### ⚡ Module 1: Micro-Hydro & Pumped Storage (PSHP)
+This module focuses on the design of a "Water Battery" system to stabilize micro-grids.
+- **Energy Arbitrage:** Stores energy by pumping water to upper reservoirs during low demand.
+- **Hydraulic Analysis:** Optimized for high-head (50m+) and low-flow (0.1 - 0.5 m³/s) scenarios.
+- **Technical Specs:** - **Efficiency:** 82% System Efficiency (Simulated).
+  - **Turbine:** Pelton Wheel / Cross-flow for variable load handling.
 
-The system consists of two reservoirs at different elevations, a pump-turbine set, and a smart control unit.
+### 🏗️ Module 2: Electrical Estimation & BOQ Analysis
+A data-driven engine to generate professional **Bill of Quantities (BOQ)** for electrical installations.
+- **Material Management:** Automated costing for Switchgears (MCB/MCCB), Wiring (FRLS), and Automation components.
+- **Compliance:** Built according to **Indian Electrical Code (IEC)** and local state electricity board standards.
+- **Cost Analysis:** Includes Labor, Contingency, and Material overheads.
 
+---
 
+## 📐 Engineering Specifications
 
-### 🛠️ Technical Specifications
-| Parameter | Value (Simulated) | Description |
+| Parameter | Calculation / Tool | Output |
 | :--- | :--- | :--- |
-| **Net Head (H)** | 50 Meters | Vertical height between reservoirs |
-| **Flow Rate (Q)** | 0.2 m³/s | Water volume per second |
-| **Turbine Type** | Pelton / Cross-flow | High-efficiency micro-turbine |
-| **Storage Capacity** | 5000 m³ | Equivalent to ~500 kWh of storage |
-| **Round-trip Efficiency**| 75% - 80% | Combined pump and turbine efficiency |
+| **Power Output** | $P = \eta \cdot \rho \cdot g \cdot h \cdot q$ | Real-time kW Generation |
+| **Drafting** | AutoCAD Electrical / Revit | SLD & BIM Layouts |
+| **Costing** | Python Automated BOQ Engine | Final Project Budget (₹) |
+| **Grid Study** | ETAP Simulation | Load Flow & Stability |
 
 ---
 
-## 📊 Mathematical Modeling (Power Calculation)
-The power output is calculated using the standard hydraulic power equation:
-
-$$P = \eta \cdot \rho \cdot g \cdot h \cdot \dot{q}$$
-
-Where:
-- $P$ = Power in Watts
-- $\eta$ = Efficiency (0.8 approx)
-- $\rho$ = Density of water ($1000 \, kg/m^3$)
-- $g$ = Acceleration due to gravity ($9.81 \, m/s^2$)
-- $h$ = Net Head (m)
-- $\dot{q}$ = Flow rate ($m^3/s$)
+## 📂 Repository Architecture
+- 📁 **`/Calculations`**: Python scripts for hydraulic power and cost estimation logic.
+- 📁 **`/Design-Docs`**: Exported PDF layouts of AutoCAD Single Line Diagrams.
+- 📁 **`/BOQ-Reports`**: Sample CSV/Excel sheets for project material lists.
 
 ---
 
-## 📂 Repository Structure
-- **`/Calculations`**: Excel sheets and Python scripts for load flow and head loss.
-- **`/Designs`**: AutoCAD Single Line Diagrams (SLD) of the powerhouse.
-- **`/Estimation`**: Detailed list of components (Pipes, Turbine, Generator, Governor).
+## 🛠️ Tech Stack & Skills
+- **Languages:** Python (Automation), C++ (Basics).
+- **Design Tools:** AutoCAD EE, Revit BIM, ETAP.
+- **Core Knowledge:** Power System Analysis, Electrical Estimation, PLC & SCADA.
 
 ---
 
-## 🛠️ Tools Used
-- **Simulation:** MATLAB / Python for efficiency modeling.
-- **Drafting:** AutoCAD Electrical for the control panel layout.
-- **Analysis:** ETAP for grid synchronization studies.
+## 👨‍💻 Developed By
+**Abhay** | *Electrical Engineer | HIET (Batch 2026)*
+🏆 *10 SGPA Diploma Holder from Govt. Polytechnic Kangra*
+
+<div align="left">
+  <a href="https://www.linkedin.com/in/abhay-abhay-9806a0355" target="blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Abhay-blue?style=flat&logo=linkedin" alt="LinkedIn" />
+  </a>
+</div>
 
 ---
-
-## 📈 Future Scope
-- **Hybrid Integration:** Combining with Solar PV for a 24/7 standalone power solution.
-- **IoT Monitoring:** Using ESP32 to monitor water levels and flow rates remotely.
-- **Smart Governor:** Automated frequency control based on load variations.
-
----
-
-## 👨‍💻 Developer
-**Abhay** *Electrical Engineer | B.Tech (2026) @ HIET*
-*Specialist in Power Systems & Renewable Energy*
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/abhay-abhay-9806a0355"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin" /></a>
-</p>
-
----
+<div align="center">
+  <i>"Integrating sustainable power with precision engineering and smart costing."</i>
+</div>
