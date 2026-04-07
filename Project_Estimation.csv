@@ -1,0 +1,48 @@
+# 🏗️ Electrical Project Estimation & Costing Model
+# Author: Abhay (EE Engineer)
+# Description: Automated BOQ (Bill of Quantities) Generator for Residential/Industrial Projects
+
+class ElectricalProject:
+    def __init__(self, project_name):
+        self.project_name = project_name
+        self.items = []
+        self.total_cost = 0
+
+    def add_item(self, name, quantity, unit_price, unit="Nos"):
+        cost = quantity * unit_price
+        self.items.append({
+            "Name": name,
+            "Qty": quantity,
+            "Unit": unit,
+            "Price": unit_price,
+            "Subtotal": cost
+        })
+        self.total_cost += cost
+
+    def generate_report(self):
+        print(f"\n{'='*50}")
+        print(f"📋 BOQ REPORT: {self.project_name}")
+        print(f"{'='*50}")
+        print(f"{'Item Name':<20} {'Qty':<10} {'Unit':<10} {'Subtotal':<10}")
+        print(f"{'-'*50}")
+        
+        for item in self.items:
+            print(f"{item['Name']:<20} {item['Qty']:<10} {item['Unit']:<10} ₹{item['Subtotal']:<10}")
+        
+        print(f"{'-'*50}")
+        print(f"{'TOTAL PROJECT ESTIMATION:':<40} ₹{self.total_cost}")
+        print(f"{'='*50}")
+
+# --- Sample Project Execution (e.g., 2BHK House Wiring) ---
+my_project = ElectricalProject("2BHK Residential Wiring")
+
+# Adding standard electrical components
+my_project.add_item("MCB 16A (DP)", 2, 450)
+my_project.add_item("Copper Wire 2.5sqmm", 5, 1200, "Coil")
+my_project.add_item("LED Panel Lights", 12, 350)
+my_project.add_item("Switch/Socket Box", 8, 250)
+my_project.add_item("Conduit Pipes", 20, 90, "Meters")
+my_project.add_item("Labor Charges", 1, 15000, "Lump-sum")
+
+# Print the Final Estimation
+my_project.generate_report()
