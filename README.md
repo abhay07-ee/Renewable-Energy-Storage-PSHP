@@ -52,7 +52,7 @@ A data-driven engine to generate professional **Bill of Quantities (BOQ)** for e
 ---
 
 ## 👨‍💻 Developed By
-**Abhay** | *Electrical Engineer | HIET (Batch 2026)*
+**Abhay** | *EE | GHEC (Batch 2026)*
 🏆 *10 SGPA Diploma Holder from Govt. Polytechnic Kangra*
 
 <div align="left">
